@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="19.7dp"
+            android:src="@drawable/logotext"
+            android:contentDescription="@string/img_logo" />
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:gravity="center"
+                android:text="Silahkan login untuk memulai aplikasi" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#100b20"
+                android:textColorHint="#a9aaac">
+
+                <EditText
+                    android:id="@+id/etusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="46dp"
+                    android:autofillHints="@string/hint_username"
+                    android:background="#0000"
+                    android:drawableStart="@drawable/ic_username"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/hint_username"
+                    android:inputType="textPersonName"
+                    android:padding="14dp"
+                    android:textColor="#404547"
+                    android:textColorHint="#76818a"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#100b20"
+                android:textColorHint="#a9aaac"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/etpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="46dp"
+                    android:autofillHints="@string/hint_password"
+                    android:background="#0000"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:padding="14dp"
+                    android:textColor="#404547"
+                    android:textColorHint="#76818a"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_signin" />
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvcna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_createaccount"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
